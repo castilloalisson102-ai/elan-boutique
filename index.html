@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ÉLAN Boutique</title>
+    <meta
+      name="description"
+      content="Boutique elegante de moda masculina y femenina. Descubre colecciones premium, essentials y looks sofisticados."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand-block">
+          <span class="brand-mark">É</span>
+          <div>
+            <p class="brand-name">ÉLAN</p>
+            <span class="brand-tag">Boutique</span>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#coleccion">Colección</a>
+          <a href="#hombre">Hombre</a>
+          <a href="#mujer">Mujer</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-button" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4a7 7 0 015.5 11.9l4.4 4.4 1.4-1.4-4.4-4.4A7 7 0 0111 4zm0 2a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          </button>
+          <button class="icon-button cart-toggle" aria-label="Carrito de compras">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a2 2 0 110 4 2 2 0 010-4zm10 0a2 2 0 110 4 2 2 0 010-4zM6.2 6h15.1l-1.8 8.1a2 2 0 01-2 1.6H9.1a2 2 0 01-2-1.6L5.1 3H3V1h3.2l.4 2z"/></svg>
+            <span class="cart-badge" id="cartBadge">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Nueva colección</p>
+            <h1>Elegancia que se vive en cada look.</h1>
+            <p>
+              Moda premium para hombres y mujeres con estilo contemporáneo,
+              cortes impecables y detalles que marcan la diferencia.
+            </p>
+            <div class="hero-actions">
+              <a href="#coleccion" class="primary-btn">Ver colección</a>
+              <a href="#mujer" class="secondary-btn">Nuestra esencia</a>
+            </div>
+            <div class="hero-metrics">
+              <div>
+                <strong>2500+</strong>
+                <span>Clientes</span>
+              </div>
+              <div>
+                <strong>120</strong>
+                <span>Estilos</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Valoración</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="mini-card mini-card-top">
+              <span>Capsule otoño</span>
+              <strong>20% OFF</strong>
+            </div>
+            <div class="hero-image-card">
+              <img
+                src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80"
+                alt="Modelo con estilo premium"
+              />
+            </div>
+            <div class="mini-card mini-card-bottom">
+              <span>Envío gratis</span>
+              <strong>En compras +$200</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories container" id="coleccion">
+        <div class="section-heading">
+          <p class="eyebrow">Categorias</p>
+          <h2>Descubre tu estilo</h2>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card category-women" data-category="women">
+            <div>
+              <p>Para ella</p>
+              <h3>Mujer</h3>
+            </div>
+            <span>Explorar</span>
+          </article>
+
+          <article class="category-card category-men" data-category="men">
+            <div>
+              <p>Para él</p>
+              <h3>Hombre</h3>
+            </div>
+            <span>Explorar</span>
+          </article>
+
+          <article class="category-card category-accesories">
+            <div>
+              <p>Complementa</p>
+              <h3>Accesorios</h3>
+            </div>
+            <span>Explorar</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="shop container">
+        <div class="shop-header">
+          <div>
+            <p class="eyebrow">Colección</p>
+            <h2>Lo más destacado</h2>
+          </div>
+
+          <div class="shop-tools">
+            <label class="search-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4a7 7 0 015.5 11.9l4.4 4.4 1.4-1.4-4.4-4.4A7 7 0 0111 4zm0 2a5 5 0 100 10 5 5 0 000-10z"/></svg>
+              <input type="search" id="searchInput" placeholder="Buscar prenda..." />
+            </label>
+
+            <select id="filterSelect" aria-label="Filtrar por categoria">
+              <option value="all">Todas</option>
+              <option value="women">Mujer</option>
+              <option value="men">Hombre</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="products-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="benefits container" id="mujer">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Nuestra esencia</p>
+          <h2>Estilo con intención</h2>
+        </div>
+
+        <div class="benefit-grid">
+          <article>
+            <span class="benefit-icon">01</span>
+            <h3>Diseño premium</h3>
+            <p>Materiales elegantes con acabados impecables para cada ocasión.</p>
+          </article>
+          <article>
+            <span class="benefit-icon">02</span>
+            <h3>Calidad duradera</h3>
+            <p>Prendas pensadas para mantenerse impecables temporada tras temporada.</p>
+          </article>
+          <article>
+            <span class="benefit-icon">03</span>
+            <h3>Servicio exclusivo</h3>
+            <p>Atención personalizada y experiencia de compra sofisticada y cercana.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-label="Carrito de compras">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">Tu compra</p>
+          <h3>Carrito</h3>
+        </div>
+        <button class="close-cart" aria-label="Cerrar carrito">×</button>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <p class="empty-cart">Tu carrito está vacío.</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="total-row">
+          <span>Total</span>
+          <strong id="cartTotal">$0</strong>
+        </div>
+        <button class="checkout-btn">Finalizar compra</button>
+      </div>
+    </aside>
+
+    <div class="modal-backdrop hidden" id="productModal">
+      <div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" aria-label="Cerrar detalle">×</button>
+        <div class="modal-image-wrap">
+          <img id="modalImage" src="" alt="Producto" />
+        </div>
+        <div class="modal-content">
+          <p class="eyebrow" id="modalCategory">Categoría</p>
+          <h3 id="modalTitle">Producto</h3>
+          <p class="modal-price" id="modalPrice">$0</p>
+          <p class="modal-description" id="modalDescription"></p>
+          <div class="sizes-block">
+            <span>Tallas</span>
+            <div class="sizes" id="modalSizes"></div>
+          </div>
+          <button class="primary-btn full-width" id="modalAddToCart">Añadir al carrito</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer" id="contacto">
+      <div class="container footer-wrap">
+        <div>
+          <p class="brand-name">ÉLAN</p>
+          <p>Estilo atemporal para cada momento.</p>
+        </div>
+        <div>
+          <p>Hola@elanboutique.com</p>
+          <p>+52 55 1234 5678</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
